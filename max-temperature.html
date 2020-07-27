@@ -2,59 +2,87 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Web Visualization Dashboard (Latitude)</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Web Visualization Dashboard (Latitude)</title>
 
-    <!-- Bring in our bootstrap stylesheet -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <!-- Bring in our bootstrap stylesheet -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
-    <!-- style information -->
-    <link rel="stylesheet" type="text/css" href="Resources/assets/style.css">
+  <!-- style information -->
+  <link rel="stylesheet" type="text/css" href="Resources/assets/style.css">
 </head>
 
 <body>
-    <!-- nav bar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand logo" href="index.html" style="color: white">Latitude</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="col-5"></div>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="nav navbar-nav mr-auto mt-2 mt-lg-0">
-                <!-- NEW CODE -->
-                <li class="nav-item dropdown">
-                    <a href="#" class="menu-option dropdown-toggle" data-toggle="dropdown" role="button"
-                        aria-haspopup="true" aria-expanded="true"> <span class="nav-label">Plots</span> <span
-                            class="caret"></span></a>
-                    <ul class="menu-option dropdown-menu">
-                        <li><a href="max-temperature.html" class="menu-option">Max Temperature</a></li>
-                        <li><a href="humidity.html" class="menu-option">Humidity</a></li>
-                        <li><a href="cloudiness.html" class="menu-option">Cloudiness</a></li>
-                        <li><a href="wind-speed.html" class="menu-option">Wind Speed</a></li>
-                    </ul>
-                </li>
-                <li><a href="comparison.html" class="menu-option">Comparison</a></li>
-                <li><a href="data.html" class="menu-option">Data</a></li>
-            </ul>
+  <!-- nav bar-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand logo" href="index.html" style="color: white">Latitude</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+      aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="col-5"></div>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="nav navbar-nav mr-auto mt-2 mt-lg-0">
+        <!-- NEW CODE -->
+        <li class="nav-item dropdown">
+          <a href="#" class="menu-option dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+            aria-expanded="true"> <span class="nav-label">Plots</span> <span class="caret"></span></a>
+          <ul class="menu-option dropdown-menu">
+            <li><a href="max-temperature.html" class="menu-option">Max Temperature</a></li>
+            <li><a href="humidity.html" class="menu-option">Humidity</a></li>
+            <li><a href="cloudiness.html" class="menu-option">Cloudiness</a></li>
+            <li><a href="wind-speed.html" class="menu-option">Wind Speed</a></li>
+          </ul>
+        </li>
+        <li><a href="comparison.html" class="menu-option">Comparison</a></li>
+        <li><a href="data.html" class="menu-option">Data</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- container/wrapper-->
+  <div class="container">
+    <!-- grid starts here-->
+    <div class="row mt-4">
+      <div class="col-12">
+        <!-- page heading -->
+        <div class="row">
+          <div class="col-2"></div>
+          <div class="col-8">
+            <h1 class="text-success">Max Temperature</h1>
+            <hr class="rounded">
+          </div>
+          <div class="col-2"></div>
         </div>
+        <!-- body of the plot page -->
+        <div class="row">
+          <div class="col-2"></div>
+          <div class="col-8">
+            <img src="Resources/assets/images/Max Temperature.png" alt="Plot" class="rounded float-left img-fluid"
+              style="margin-top: 2px; max-width: 100%; height: 90%">
+          </div>
+          <div class="col-2"></div>
+        </div>
+      </div>
+    </div>
+    <!-- sticky footer-->
+    <nav class="navbar justify-content-center fixed-bottom navbar-dark bg-dark border-top border-dark">
+      <a class="navbar-brand" href="#">Copyright &copy</a>
     </nav>
+  </div>
 
-    <!-- container/wrapper-->
-
-    <!-- jquery-->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
-    </script>
+  <!-- jquery-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+  </script>
 </body>
 
 </html>
