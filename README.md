@@ -1,7 +1,7 @@
 # Web Design Challenge
 #### This is a visualization dashboard website using various weather data related visualizations we've created in a past assignment.
 
-## This website is consist of seven pages total:
+## This website consist of seven pages total:
 ### Homepage or Landing Page
 ### Four Visualization pages
 ### Comparisons Page
